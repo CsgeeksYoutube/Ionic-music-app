@@ -29,7 +29,7 @@ export class HomePage {
   	this.musicProvider.getMusic()
   		.subscribe((musicList) => {
   			allMusicLoadingController.dismiss();
-  			this.allMusic = musicList['allMusic']
+  			this.allMusic = musicList;
   		});
   }
   shareSong(music){
